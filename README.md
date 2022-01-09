@@ -10,24 +10,24 @@ The purpose of this analysis is to quickly summarize annual returns and volume f
 Both 2017 and 2018 ran in ~0.3 seconds. See images for run times and VBA script of the data-finding for loop. Refactoring the code increased speed to under 0.1 seconds. Over a 3x increase in speed. Details below.
 
 #### For Loop before refactor
-https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/New_for_loop.png
+![image](https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/New_for_loop.png)
 
 #### For Loop after refactor
-https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/New_for_loop.png
+![image](https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/New_for_loop.png)
 
 Notable changes: 	The new iteration of the for loop using an output array to store values produced results for 2018 and 2017 in under 0.1 seconds (over 3x faster) for the same list of stocks. See code and runtime images below. Note the subsection 1b) where output arrays are created and 2b) where the new for loop utilizes a "tickerIndex" to run for each stock vs. looping through all tickers in the old version.
 
 #### Run times for 2017 and 2018 before refactor
-https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2017_old_runtime.png
-https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2018_old_runtime.png
+![image](https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2017_old_runtime.png)
+![image](https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2018_old_runtime.png)
 
 #### Run times after refactor
-https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2017_new_runtime.png
-https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2018_new_runtime.png
+![image](https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2017_new_runtime.png)
+![image](https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2018_new_runtime.png)
 
 ### Stock Performance
-https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2017_stocks.png
-https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2018_stocks.png
+![image](https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2017_stocks.png)
+![image](https://github.com/ShaneDoane/stock-analysis/blob/main/Resources/2018_stocks.png)
 
 On average, most green energy stocks analyzed had significant positive returns in 2017 and negative in 2018. Ticker ENPH by far had the most impressive 2 year CAGR for 2017 and 2018, with increased volume in 2018. This could suggest that given the negative returns of all but one other stock in 2018, ENPH has relative strength vs its peer group. This may suggest market leadership in green energy. Given pure stock performance, ENPH would have been the best investment from this list of stocks on a risk-adjusted basis for 2017 and 2018. Past performance is not indicative of future performance. More research should be done on the underlying fundamentals of the businesses. 
 
